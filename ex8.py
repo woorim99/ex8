@@ -149,7 +149,7 @@ class Set:
         return(Set(self))
 
     def add(self, elem):
-        return Set(self.data).union([elem])
+        return Set(self.data).union(Set([elem]))
 
     def remove(self,elem):
         if elem in self.data:
